@@ -1,31 +1,44 @@
-# 4-bit-ALU-Verilog
-A 4-bit ALU designed and simulated using Verilog HDL, supporting arithmetic and logic operations with a dedicated testbench and waveform verification.
+# 4-bit ALU using Verilog
 
-## Operations
+A 4-bit Arithmetic Logic Unit designed and simulated using Verilog HDL.
+
+## Features
+
+- 4-bit inputs A and B
+- 3-bit operation selector
+- Arithmetic operations
+- Logic operations
+- Verilog testbench
+- Waveform verification using EPWave
+
+## Operation Table
 
 | Op | Operation |
 |----|-----------|
 | 000 | Zero |
-| 001 | Addition (A + B) |
-| 010 | Subtraction (A - B) |
-| 011 | AND (A & B) |
-| 100 | OR (A | B) |
-| 101 | NOT B (~B) |
-| 110 | NOT B (~B) |
+| 001 | A + B |
+| 010 | A - B |
+| 011 | A & B |
+| 100 | A | B |
+| 101 | ~B |
+| 110 | ~B |
 | 111 | Zero |
 
 ## Files
 
-- `design.sv` - ALU design
-- `Testbench.sv` - Testbench for simulation
+- `design.sv` — ALU design
+- `testbench.sv` — Testbench
+- `waveform.png` — Simulation waveform
+
+## Waveform Simulation
+
+The ALU was simulated using Icarus Verilog and verified using EPWave.
+
+![4-bit ALU Waveform](waveform.png)
 
 ## Tools Used
 
-- Verilog/SystemVerilog
+- Verilog HDL
 - Icarus Verilog
 - EPWave
-
-
-## Simulation
-
-The ALU was tested using different operation codes and verified through waveform simulation.
+- EDA Playground
