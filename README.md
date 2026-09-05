@@ -25,6 +25,7 @@ A 4-bit ALU designed and simulated using Verilog HDL, supporting arithmetic and 
 - Icarus Verilog
 - EPWave
 
+
 ## Simulation
 
 The ALU was tested using different operation codes and verified through waveform simulation.
